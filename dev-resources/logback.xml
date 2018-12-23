@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %highlight(%5p) | %t | %-20logger{20} | %m %n</pattern>
+        </encoder>
+    </appender>
+    <logger name="clj-boolean.opt.core" level="INFO" />
+    <logger name="clj-boolean.opt.pass-distrib" level="DEBUG" />
+    <root>
+        <level value="WARN" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>
